@@ -1,0 +1,49 @@
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "bases/animations";
+@import "bases/bases";
+@import "bases/typography";
+@import "bases/utilities";
+
+// COMPONENTS 
+
+@import "components/articles";
+@import "components/buttons";
+@import "components/compositions";
+@import "components/features-box";
+@import "components/gallery";
+
+
+
+
+// SITE LAYOUTS
+@import "layouts/footer";
+@import "layouts/headers";
+@import "layouts/navigations";
+
+
+@import"pages/about.scss";
+@import"pages/home.scss";
+@import"pages/contact.scss";
+@import"pages/music.scss";
+@import"pages/movies.scss";
+@import"pages/talkshow.scss";
+@import"pages/blog.scss";
+
+
+
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+
+
+
+
+footer {
+  padding: 5rem 0;
+}
