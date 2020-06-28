@@ -3,48 +3,23 @@
  .masthead {
     position: relative;
     width: 100%;
-    //height: 75vh;
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    overflow: hidden;
-    //background: linear-gradient(to bottom, #{fade-out($color-black, .7)} 0%,#{fade-out($color-black, .3)} 75%,$color-black 100%), url('../img/bg-masthead.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../assets/img/bg-masthead.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    h1 {
-      font-family: 'Varela Round';
-      font-size: 2.5rem;
-      line-height: 2.5rem;
-      letter-spacing: 0.8rem;
-      background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out($color-primary, 1));
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+
+    .container{padding: 0!important;}
+
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { 
+      padding: 15rem 0;
     }
-    h2 {
-      max-width: 20rem;
-      font-size: 1rem;
-    }
-    @media(min-width: 768px) {
-      h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-      }
-    }
-    @media(min-width: 992px) {
-      height: 100vh;
-      padding: 0;
-      h1 {
-        font-size: 6.5rem;
-        line-height: 6.5rem;
-        letter-spacing: 0.8rem;
-      }
-      h2 {
-        max-width: 30rem;
-        font-size: 1.25rem;
-      }
-    }
+   
   }
   
 #feature-image{
@@ -57,7 +32,7 @@
 }
 
 .carousel-item {
-    height: 100vh;
+    height: 60vh;
     min-height: 350px;
    
     background-repeat: no-repeat;
@@ -71,93 +46,5 @@
 
   
   
-  header .embed-responsive {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  header .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
-  
-  @media (pointer: coarse) and (hover: none) {
-    header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    header video {
-      display: none;
-    }
-  }
-
-  .section-movies {
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-
-    .container {
-      position: relative;
-      z-index: 2;
-    }
-  }
-  
-  .section-movies video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
   
   
-  
-  .section-movies .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
-  
-  @media (pointer: coarse) and (hover: none) {
-    header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    .section-movies video {
-      display: none;
-    }
-  }

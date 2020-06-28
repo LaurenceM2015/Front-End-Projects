@@ -1,3 +1,8 @@
+/*=======================================
+            LANGDING PAGE
+========================================*/
+ 
+
 .section-music{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     background-size: cover;
@@ -52,12 +57,25 @@
     background-attachment: fixed;
 }
 
+
+
+
 .parallax-window {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) !important;
     min-height: 85vh !important;
     position: relative;
     color: $color-white;
     background-position-y: top;
+
+    .container{
+        padding-top: inherit;
+        position: relative;
+        z-index: 3;
+    }
+
+    @media (min-width: 700px){
+        min-height: 70vh !important;
+    }
 
 }
 
@@ -95,7 +113,7 @@
 ========================================= */
 
 .signup-section {
-    padding: 10rem 0;
+    
     background: linear-gradient(to bottom, #{fade-out($color-black, .9)} 0%,#{fade-out($color-black, .5)} 75%,$color-black 100%), url('../img/bg-signup.jpg');
     //background-color: #88543f;
     background-position: top center;
@@ -127,7 +145,7 @@
             background: #fff;
             border-radius: 100%;
             line-height: 3rem;
-            color: rgba(136, 84, 63, 0.9); 
+            color: rgba($color-primary, 0.9); 
 
             &:hover {color: rgba($color-secondary, 0.5); }
 

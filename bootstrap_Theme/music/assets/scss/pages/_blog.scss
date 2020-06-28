@@ -9,3 +9,20 @@
     background-position: top;
 
 }
+
+.blog-section{
+    position: relative;
+    .card-columns{
+        .card{
+          
+          //border-bottom: none !important;
+          margin-top: 2.5rem;
+          height: auto !important;
+          box-shadow: none !important;
+        }
+      }
+}
+
+.media{
+  img{width: auto !important;}
+}

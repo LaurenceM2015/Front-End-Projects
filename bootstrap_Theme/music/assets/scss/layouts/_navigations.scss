@@ -1,17 +1,6 @@
 // Styling for the navbar
 /*
 
- navbar-toggler{  
-   background-color: $color-tertiary;
-   color: $color-white;}
-
-   .nav-link{
-     &.active,
-          &:hover {
-            color: $color-primary;
-          }
-
-   }
 */
 #mainNav {
   min-height: 56px;
@@ -27,11 +16,12 @@
   }
   .navbar-brand {
     color: $color-black;
-    font-weight: 700;
-    padding: .9rem 0;
-
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    
     img{
-      width: 15rem;
+      //width: 15rem;
       height: 5rem;
     }
   }
