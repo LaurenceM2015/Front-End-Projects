@@ -1127,7 +1127,7 @@ p {
   height: 95vh; }
 
 .carousel-item {
-  height: 75vh;
+  height: 60vh;
   min-height: 350px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -1413,19 +1413,6 @@ p {
       background-size: cover; }
       #music iframe {
         display: none; } }
-
-.section-music__box {
-  height: 100% !important; }
-
-.section-music__img {
-  width: 100%; }
-
-.section-music__text {
-  height: 100% !important; }
-  .section-music__text .project-text {
-    padding: 0 1.5rem !important;
-    margin: auto 0;
-    width: 100%; }
 
 @media (min-width: 75em) {
   #music-page .card-columns {
